@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="list"></div>
+    <script>
+        const tasks=[
+            {task:'take a shower', status:'completed'},
+            {task:'make skincare', status:'pending'},
+            {task:'clean the room', status:'completed'},
+            {task:'read 10 page', status:'pending'},
+            {task:'workout', status: 'pending'},
+            {task:'studying JS', status:'pending'},
+        ]
+
+        const list=document.getElementById('list')
+        tasks.forEach(element=>{
+            if(element.status=='completed'){
+                list.innerHTML+=`
+                    <p>
+                        <input type="checkbox" name="${element.task}" checked>
+                        <label for="${element.task}">${element.task}</label>
+                    </p>
+                `
+            }else{
+                list.innerHTML+=`
+                    <p>
+                        <input type="checkbox" name="${element.task}">
+                        <label for ="${element.task}">${element.task} </label>
+                    </p>
+                `
+            }
+            
+        })
+    </script>
+    
+</body>
+</html>
