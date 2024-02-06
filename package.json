@@ -18,6 +18,7 @@
   "author": "Kelly Condori <kellycondoricondori@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^3.3.1",
     "http-server": "^14.1.1"
   }
 }
