@@ -90,4 +90,4 @@ const newArray=menu.map(item=>(
     item.id===cambios.id?{...item, ...cambios.changes}:item))
 
 console.log('menu', menu);
- console.log('nuevo',newArray);
+console.log('nuevo',newArray);
